@@ -1,6 +1,6 @@
 # CPDEM
 
-Constitutive Parameterized Deep Energy Method for solid mechanics. Three minimal PyTorch examples train shared material-conditioned displacement networks by minimizing potential energy. Coordinates and material samples are generated at runtime; no training dataset is required.
+Constitutive Parameterized Deep Energy Method for solid mechanics. Representative PyTorch examples train shared material-conditioned displacement networks by minimizing potential energy. Coordinates and material samples are generated at runtime; no training dataset is required.
 
 ## Examples
 

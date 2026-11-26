@@ -26,6 +26,19 @@ python beam2d_neohookean.py
 
 Common options: `--device cpu`, `--steps 1500`, `--lbfgs-steps 100`, `--seed 2025`, and `--output outputs/model.pt`. Checkpoints contain the network state, sampled materials, and run configuration.
 
+`CPDEM.py` provides the shared network, quadrature, training, and checkpoint utilities. Each case script defines its mechanical energy and training materials.
+
+## Testing
+
+```bash
+python test_CPDEM.py
+python test_CPDEM.py --checkpoint outputs/bar1d_linear.pt --material 1.75
+python test_CPDEM.py --checkpoint outputs/beam2d_linear.pt --material 250 0.28
+python test_CPDEM.py --checkpoint outputs/beam2d_neohookean.pt --material 950 0.28
+```
+
+The checks cover displacement boundaries, energy gradients, analytical bar energy, undeformed beam states, and checkpoint restoration. Checkpoint evaluation reports displacement ranges and the bar's analytical relative error; `--output outputs/predictions.csv` exports predictions.
+
 ## Source
 
 Extracted from the CPDEM server project: `run_bar1d_generalization.py`, `run_p2inn_vs_cpdem_plane_strain.py`, and `run_neohookean_ablation.py`. The package retains the network and energy definitions with simplified training entry points for the representative examples.

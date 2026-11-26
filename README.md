@@ -1,6 +1,6 @@
 # CPDEM
 
-Constitutive Parameterized Deep Energy Method for solid mechanics. Representative PyTorch examples train shared material-conditioned displacement networks by minimizing potential energy. Coordinates and material samples are generated at runtime; no training dataset is required.
+Constitutive Parameterized Deep Energy Method for solid mechanics. Representative PyTorch examples train shared material-conditioned displacement networks by minimizing potential energy. Coordinates and material samples are generated at runtime.
 
 ## Examples
 
@@ -23,11 +23,11 @@ python beam2d_linear.py
 python beam2d_neohookean.py
 ```
 
-Common options: `--device cpu`, `--steps 1500`, `--lbfgs-steps 100`, `--seed 2025`, and `--output outputs/model.pt`. Checkpoints contain the network state, sampled materials, and run configuration. These are compact training examples, not scripts reproducing all paper experiments.
+Common options: `--device cpu`, `--steps 1500`, `--lbfgs-steps 100`, `--seed 2025`, and `--output outputs/model.pt`. Checkpoints contain the network state, sampled materials, and run configuration.
 
 ## Source
 
-Extracted from the CPDEM server project: `run_bar1d_generalization.py`, `run_p2inn_vs_cpdem_plane_strain.py`, and `run_neohookean_ablation.py`. Network and energy definitions are retained; entry points are simplified. FEM solvers, plotting, baseline comparisons, reference datasets, and experiment results are excluded.
+Extracted from the CPDEM server project: `run_bar1d_generalization.py`, `run_p2inn_vs_cpdem_plane_strain.py`, and `run_neohookean_ablation.py`. The package retains the network and energy definitions with simplified training entry points for the representative examples.
 
 ## Citation
 

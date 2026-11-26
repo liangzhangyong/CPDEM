@@ -9,6 +9,10 @@ Constitutive Parameterized Deep Energy Method for solid mechanics. Representativ
 - Pretrained models predict unseen in-range material responses without retraining.
 - Benchmarks span elasticity, hyperelasticity, elastoplasticity, and viscoelasticity.
 
+![Material parameters and the corresponding mechanical response family](assets/cpdem_random_material_family.png)
+
+![CPDEM architecture and potential-energy training workflow](assets/cpdem_framework.png)
+
 ## Usage
 
 Requires Python 3.10 or newer. CPU and CUDA are supported.

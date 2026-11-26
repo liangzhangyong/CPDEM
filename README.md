@@ -2,15 +2,12 @@
 
 Constitutive Parameterized Deep Energy Method for solid mechanics. Representative PyTorch examples train shared material-conditioned displacement networks by minimizing potential energy. Coordinates and material samples are generated at runtime.
 
-## Examples
+## Highlights
 
-| Script | Problem | Material range |
-| --- | --- | --- |
-| `bar1d_linear.py` | Linear bar, body force `f(x)=x`, fixed left end, free right end | `E` in `[0.5, 3]` |
-| `beam2d_linear.py` | Plane-strain linear cantilever, right traction `(0, -5)` | `E` in `[100, 500]`, `nu` in `[0.25, 0.35]` |
-| `beam2d_neohookean.py` | Plane-strain compressible Neo-Hookean cantilever, right traction `(0, -2)` | `E` in `[800, 1200]`, `nu` in `[0.25, 0.35]` |
-
-The bar occupies `[-1, 1]`; both beams occupy `[0, 4] x [0, 1]` with a fixed left edge. Essential boundary conditions are imposed through the displacement ansatz.
+- CPDEM learns material parameter-to-solution maps by minimizing expected energy.
+- Energy gaps bound parameter-averaged errors in stable linear-elastic families.
+- Pretrained models predict unseen in-range material responses without retraining.
+- Benchmarks span elasticity, hyperelasticity, elastoplasticity, and viscoelasticity.
 
 ## Usage
 

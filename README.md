@@ -28,3 +28,14 @@ Common options: `--device cpu`, `--steps 1500`, `--lbfgs-steps 100`, `--seed 202
 ## Source
 
 Extracted from the CPDEM server project: `run_bar1d_generalization.py`, `run_p2inn_vs_cpdem_plane_strain.py`, and `run_neohookean_ablation.py`. Network and energy definitions are retained; entry points are simplified. FEM solvers, plotting, baseline comparisons, reference datasets, and experiment results are excluded.
+
+## Citation
+
+```bibtex
+@article{liang2026constitutive,
+  title={Constitutive parameterized deep energy method for solid mechanics problems with random material parameters},
+  author={Liang, Zhangyong and Zhu, Jihong and Gao, Huanhuan},
+  journal={arXiv preprint arXiv:2603.26030},
+  year={2026}
+}
+```

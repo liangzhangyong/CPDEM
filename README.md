@@ -39,3 +39,7 @@ Extracted from the CPDEM server project: `run_bar1d_generalization.py`, `run_p2i
   year={2026}
 }
 ```
+
+## Contact
+
+[zyliang1994@tju.edu.cn](mailto:zyliang1994@tju.edu.cn)
